@@ -50,7 +50,7 @@ namespace Com.MyCompany.MyGame
 		{
 			Debug.Log("DemoAnimator/Launcher:OnPhotonRandomJoinFailed() was called by PUN. No random room available, so we create one.\nCalling: PhotonNetwork.CreateRoom(null, new RoomOptions() {maxPlayers = 4}, null);");
 			// #Critical: we failed to join a random room, maybe none exists or they are all full. No worries, we create a new room.
-			PhotonNetwork.CreateRoom(null, new RoomOptions() { MaxPlayers = 2 }, null);
+			PhotonNetwork.CreateRoom(null, new RoomOptions() { MaxPlayers = 10 }, null);
 		}
 
 		public override void OnJoinedRoom()
